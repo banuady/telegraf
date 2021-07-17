@@ -10,12 +10,14 @@ then
     export _JAVA_OPTIONS="-Djava.net.preferIPv4Stack=true"
     export http_proxy=
     export HTTP_PROXY=
+    export EC2_NAME="WebApp"
     export EC2_IPADDRESS=$(hostname -I | awk '{print $1}')
     export EC2_HOSTNAME=$(hostname)
 
     echo "******************************** NEW ENV VARIABLES DEFINED: ********************************"
     echo " "
     echo " "
+    echo EC2_NAME=$EC2_NAME
     echo EC2_IPADDRESS=$EC2_IPADDRESS
     echo EC2_HOSTNAME=$EC2_HOSTNAME
 
